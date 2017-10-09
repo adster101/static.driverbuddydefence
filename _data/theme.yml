@@ -1,0 +1,19 @@
+#############
+# Navigations
+#############n
+navigation:
+  main:
+  - title: About
+    url: /about/
+
+  - title: Features
+    url: /feautres/
+
+  - title: Download
+    url: /download/
+
+  - title: Pricing
+    url: /pricing/
+
+  - title: news
+    url: /news/
