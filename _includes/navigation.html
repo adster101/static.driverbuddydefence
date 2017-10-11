@@ -1,4 +1,4 @@
-<div class="bg-white shadow">
+<div class="bg-white shadow ">
   <div class="mw7 mw8-l w-100 center {% if page.sidebar %}center-l{% else %}center{% endif %}">
     <nav class="flex-l items-center pa4-l pa3 ph5-ns">
       <a class="link dim black b f6 f5-ns w-100 w-25-l flex items-center pb2 pb0-ns" href="{{ '/' | absolute_url }}" title="Home">
@@ -14,7 +14,7 @@
         {% else %}
           {% assign domain = site.url | append: site.baseurl %}
         {% endif %}
-        <a href="{{ domain }}{{ link.url }}" class="link dim dark-gray f6 f5-ns dib mr3-ns mr2">{{ link.title }}</a>
+        <a href="{{ domain }}{{ link.url }}" class="link dim dark-gray f6 f5-ns dib mr4-ns mr2">{{ link.title }}</a>
       {% endfor %}
     </div>
       </nav>
