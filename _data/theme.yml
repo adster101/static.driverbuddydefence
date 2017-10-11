@@ -1,5 +1,5 @@
 #############
-# Navigations
+# Navigation
 #############n
 navigation:
   main:
@@ -9,11 +9,11 @@ navigation:
   - title: Features
     url: /feautres/
 
-  - title: Download
-    url: /download/
-
   - title: Pricing
     url: /pricing/
 
-  - title: News
-    url: /news/
+  - title: FAQ
+    url: /faq/
+
+  - title: Download
+    url: /download/
