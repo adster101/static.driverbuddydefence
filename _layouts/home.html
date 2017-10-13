@@ -5,7 +5,7 @@ class: bg-light-gray
 
 <section class="mt3 pa3 p0-ns">
   <div class="mw7 center">
-    <div class="cf ph2-ns">
+    <div class="cf">
       <div class="fl w-100 w-50-ns">
         <h1 class="fw2">Driver Buddy Defence</h1>
         <h2 class="sub-headline fw3 dark-gray">
@@ -19,12 +19,14 @@ class: bg-light-gray
         </p>
         <ul class="list pl0">
           <li class="mb3">
-            <a class="link orange underline-hover" href="#">
+            <a class="link orange underline-hover flex items-center" href="#">
+              <img src="/assets/images/android.svg" height="16" class="pr1" />
               Android
             </a>
           </li>
           <li>
-            <a class="link orange underline-hover" href="#">
+            <a class="link orange underline-hover flex items-center" href="#">
+              <img src="/assets/images/apple.svg" height="16" class="pr1" />
               iPhone
             </a>
           </li>
@@ -39,11 +41,37 @@ class: bg-light-gray
   </div>
 </section>
 
-
+<section id="key-points" class="bg-white bg-center contain pt5-l pt3">
+  <div class="cf mw7 pa3 center p0-ns ">
+    {% for usp in site.data.theme.usps.home %}
+    <div class="fl w-50-ns w-100 mb3-l mb2-m mb1">
+      <div class="w-90">
+        <div class="flex items-start">
+          <img src="{{ usp.image }}" />
+          <div class="pl3">
+          <h2 class="fw4 bear-black mt0">
+          {{ usp.title }}
+        </h2>
+        <p class="fw3 dark-gray">{{ usp.blurb }}</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+  <footer class="bg-orange">
+    <div class="mw7 center pa3">
+      <p class="fw4 tc near-black center">
+        <a class="link dim f4" href="#">
+          Learn more...</a> <span class="ph3">or</span> <a href="#" class="link dim f4">Request a free trial</a>
+          </p>
+    </div>
+  </footer>
+</section>
 
 <section class="flex justify-center mt3 pa3 p0-ns">
 
-  <div class="mw7 w-100 pa3 p0-ns">
+  <div class="mw7 w-100">
     <h3 class="f5 f4-ns fw3 mb0 pb2 bb b--light-gray">{{ site.data.theme.text.latest_articles | default: "Recent Posts" }}</h3>
 
     {% for post in site.posts limit: site.data.theme.text.post_limit %}
