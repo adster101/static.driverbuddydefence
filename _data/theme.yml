@@ -20,16 +20,21 @@ navigation:
 usps:
   home:
   - title: Secure
-    blurb: Fully https end to end transmission means the app is as secure as houses
+    blurb: Fully https end to end transmission means the app is as secure as
+    bullets:
+      -
+        title: Non Compliance
+      -
+        title: Illegal Activity (Theft)
     image: /assets/images/lock.svg
   - title: Protect
     blurb: Our systems protects the Driver, Company and Freight from prosecution, violence, clandestine operations and freight contamination
     image: /assets/images/security.svg
   - title: Detect
-    blurb: Detect and be alerted to clandestine entry or interferance via a the system.
+    blurb: Driver Compliance with Checks, DBD Signage, High Quality Seals, Sterile Data evidence
     image: /assets/images/add_a_photo.svg
   - title: Deter
-    blurb: Discourage illegal immigrants from targeting your vehicle with a tamper proof seal.
+    blurb: Driver Compliance with Checks, DBD Signage, High Quality Seals, Sterile Data evidence
     image: /assets/images/pan_tool.svg
 news:
   home:
