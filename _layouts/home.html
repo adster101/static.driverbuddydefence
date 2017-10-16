@@ -7,13 +7,12 @@ class: bg-light-gray
   <div class="mw7 center">
     <div class="cf">
       <div class="fl w-100 w-50-ns">
-        <h1 class="fw2">Driver Buddy Defence</h1>
-        <h2 class="sub-headline fw3 dark-gray">
-          Vehicle Security Systems
+        <h1 class="headline fw3 near-black">
+          Driver Buddy Defence<sup>TM</sup> Vehicle Security Systems
+        </h1>
+        <h2 class="fw3 sub-headline lh-copy">
+          Designed to provide <span class="b">easy to use, cost effective</span> and <span class="b">reliable</span> security systems to <span class="b">protect</span>, <span class="b">detect</span> and <span class="b">deter</span> criminal activity against drivers, vehicles and freight.
         </h2>
-        <h3 class="fw3 black lh-copy">
-          DBS is designed to provide <span class="b">easy to use, cost effective</span> and reliable security systems to Protect, Detect and Deter criminal activity against drivers, vehicles and freight
-        </h3>
         <p>
           Available for:
         </p>
@@ -41,7 +40,18 @@ class: bg-light-gray
   </div>
 </section>
 
-<section id="key-points" class=" bg-center contain pt5-l pt3">
+<section id="key-points" class="bg-white pt5-l pt3">
+  <div class="mw7 center pa3">
+    <p class="f4 fw3 tc mw7-ns">
+      Our aim is to deliver a cost effective and reliable security systems to secure regional distribution networks throughout Europe and to to support the reduction of illegal operations.
+    </p>
+    <p class="fw4 tc center">
+      <a class="link dim f4 orange underline" href="#">
+        Learn more about the Driver Buddy System
+      </a>
+        </p>
+  </div>
+
   <div class="cf mw8 center pa3 p0-ns">
     {% for usp in site.data.theme.usps.home %}
     <div class="fl w-25-l w-100 w-50-m mb3-l mb2-m mb1">
@@ -51,27 +61,20 @@ class: bg-light-gray
           {{ usp.title }}
 
         </h1>
+        <!-- <p class="f4 fw3 dark-gray">{{ usp.blurb }}</p> -->
         <ul class="list lh-copy ph0">
         {% for bullet in usp.bullets %}
         <li>
-        {{ bullet.title }}
+        &ndash;&nbsp;{{ bullet.title }}
       </li>
         {%endfor %}
       </ul>
-        <p class="fw3 dark-gray">{{ usp.blurb }}</p>
 
     </div>
   </div>
   {% endfor %}
 </div>
-  <footer class="bg-orange">
-    <div class="mw7 center pa3">
-      <p class="fw4 tc near-black center">
-        <a class="link dim f4" href="#">
-          Learn more...</a> <span class="ph3">or</span> <a href="#" class="link dim f4">Request a free trial</a>
-          </p>
-    </div>
-  </footer>
+
 </section>
 
 <section class="flex justify-center mt3 p0-ns pa3">
