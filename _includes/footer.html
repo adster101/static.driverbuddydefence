@@ -1,17 +1,24 @@
-<footer class="flex justify-start items-baseline {% if page.sidebar %}mw8{% else %}mw7{% endif %} center w-100 ph3 ph4-ns mt4 mb2 lh-copy">
-  <nav class="flex flex-row flex-wrap">
-    <span class="f7 fw3 silver mr3 ttc"><a href="{{ '/' | absolute_url }}" class="f7 fw5 silver hover-silver link underline-hover" title="{{ site.title }}">{{ site.title | capitalize }}</a> &copy; {{ site.time | date: '%Y' }}</span>
+<div class="bg-orange">
+    <div class="mw8 center pa3">
+      <p class="fw4 tc white center">
+        <a href="#" class="link dim f4">
+          Request a free trial
+        </a>
+      </p>
+    </div>
+  </div>
+<footer class="bg-near-black pa3">
+  <div class="center mw8 w-100 lh-copy">
+  <nav class="flex flex-row flex-wrap moon-gray">
     {% if site.data.theme.navigation.footer %}
     {% for link in site.data.theme.navigation.footer %}
-      {% if link.url contains 'http' %}
-        {% assign domain = '' %}
-      {% elsif link.url contains 'mailto' %}
-        {% assign domain = '' %}
-      {% else %}
-        {% assign domain = site.url | append: site.baseurl %}
-      {% endif %}
-      <a href="{{ domain }}{{ link.url }}" class="f7 fw3 silver hover-silver link underline-hover mr3" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title | capitalize }}</a>
+      <a href="{{ domain }}{{ link.url }}" class="fw4 moon-gray hover-white link mr3" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title | capitalize }}</a>
     {% endfor %}
     {% endif %}
   </nav>
+  <p class="moon-gray">
+    <a href="{{ '/' | absolute_url }}" class="fw4 f6 hover-white link silver" title="{{ site.title }}">
+      {{ site.title }} &copy; {{ site.time | date: '%Y' }}
+    </a>
+  </p>
 </footer>

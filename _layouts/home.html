@@ -3,7 +3,7 @@ layout: default
 class: bg-light-gray
 ---
 
-<section class="mt3 pa3 p0-ns">
+<section class="mt3 pa3">
   <div class="mw7 center">
     <div class="cf">
       <div class="fl w-100 w-50-ns">
@@ -52,53 +52,21 @@ class: bg-light-gray
         </p>
   </div>
 
-  <div class="cf mw8 center pa3 p0-ns">
+  <div class=" mw8 center pa3 p0-ns">
+    <div class="flex flex-wrap">
     {% for usp in site.data.theme.usps.home %}
-    <div class="fl w-25-l w-100 w-50-m mb3-l mb2-m mb1">
-        <div class="tc">
-          <img src="{{ usp.image }}" width="64"/>
-          <h1 class="fw4 bear-black mt4-ns mt3">
-          {{ usp.title }}
-
-        </h1>
-        <!-- <p class="f4 fw3 dark-gray">{{ usp.blurb }}</p> -->
-        <ul class="list lh-copy ph0">
-        {% for bullet in usp.bullets %}
-        <li>
-        &ndash;&nbsp;{{ bullet.title }}
-      </li>
-        {%endfor %}
-      </ul>
-
-    </div>
-  </div>
+          <div class="w-50">
+            <div class="flex items-start">
+              <img src="{{ usp.image }}" />
+              <div class="pl3">
+              <div class="f5 lh-copy dark-gray">
+              <span class="b">{{ usp.title }}</span>&nbsp;{{ usp.blurb }}
+            </div>
+          </div>
+          </div>
+        </div>
   {% endfor %}
 </div>
+</div>
 
-</section>
-
-<section class="flex justify-center mt3 p0-ns pa3">
-  <div class="mw8 w-100 ">
-    <h3 class="f4 f3-ns fw3 mb0 pb2 bb b--light-gray">{{ site.data.theme.text.latest_articles | default: "Latest news" }}</h3>
-    <div class="cf center">
-      {% for news in site.data.theme.news.home limit: 4 %}
-        <div class="fl w-25-l w-50-m w-100">
-          <a class="link db black-80 hover-silver" href="{{ post.url | relative_url }}">
-            <article class="bg-white ba b--black-10  mb3 mr3-ns">
-              <img src="{{ news.image }}" class="db w-100" />
-                <div class="pa3">
-                <a class="lh-title link dim">
-                  {{ news.title | escape }}
-                </a>
-                <p class="fw3 ">{{ news.blurb | remove: '<p>' | remove: '</p>' }}</p>
-                <small class="gray db">
-                  {{ news.date }}
-                </small>
-              </div>
-            </article>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
 </section>

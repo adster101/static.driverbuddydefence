@@ -4,23 +4,30 @@
 navigation:
   main:
   - title: About
-    url: /about/
-
+    url: #
   - title: Features
-    url: /feautres/
-
+    url: #
   - title: Pricing
-    url: /pricing/
-
+    url: #
   - title: FAQ
-    url: /faq/
-
+    url: #
   - title: Download
-    url: /download/
+    url: #
+  - title: Contact
+    url: #
+  footer:
+  - title: Privacy Policy
+    url: #
+  - title: Terms & Conditions
+    url: #
+  - title: About
+    url: #
+  - title: Contact
+    url: #
 usps:
   home:
   - title: Secure
-    blurb: Encrytped transmission and storage
+    blurb: valuable cargo with tamper proof security seal and unique QR code to prevent replication using  DriverBuddyDefenceTM Security Seal
     bullets:
       -
         title: Tamper proof evidence
@@ -29,10 +36,10 @@ usps:
       -
         title: Secure data storage
       -
-        title: Trackable        
+        title: Trackable
     image: /assets/images/lock.svg
   - title: Protect
-    blurb: Driver, company and freight.
+    blurb: drivers and operators from prosecution with an electronic secure record of prestart checks using your smart phone with DriverBuddyDefence<sup>TM</sup> App
     bullets:
       -
         title: From prosecution
